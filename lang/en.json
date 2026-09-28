@@ -1,0 +1,20 @@
+{
+  "RUNYTH_TOKEN_ROTATION": {
+    "Controls": {
+      "CounterClockwise": "Rotate Selected Tokens Counter-Clockwise",
+      "Reset": "Reset Selected Token Rotation",
+      "Clockwise": "Rotate Selected Tokens Clockwise"
+    },
+    "Settings": {
+      "RotationStep": {
+        "Name": "Rotation Step",
+        "Hint": "Degrees by which selected tokens are rotated per command. Default: 15°."
+      }
+    },
+    "Notifications": {
+      "NoSelection": "Select at least one token first.",
+      "NoPermission": "You do not have permission to rotate the selected token(s).",
+      "Error": "Token rotation failed. See the browser console for details."
+    }
+  }
+}
