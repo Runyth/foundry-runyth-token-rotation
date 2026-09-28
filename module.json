@@ -1,0 +1,30 @@
+{
+  "id": "runyth-token-rotation",
+  "title": "Runyth Token Rotation",
+  "description": "Fast, configurable rotation controls for selected tokens.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Akito"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    }
+  ]
+}

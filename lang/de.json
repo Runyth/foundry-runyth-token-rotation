@@ -1,0 +1,20 @@
+{
+  "RUNYTH_TOKEN_ROTATION": {
+    "Controls": {
+      "CounterClockwise": "Ausgewählte Tokens gegen den Uhrzeigersinn drehen",
+      "Reset": "Drehung ausgewählter Tokens zurücksetzen",
+      "Clockwise": "Ausgewählte Tokens im Uhrzeigersinn drehen"
+    },
+    "Settings": {
+      "RotationStep": {
+        "Name": "Drehschritt",
+        "Hint": "Gradzahl, um die ausgewählte Tokens pro Aktion gedreht werden. Standard: 15°."
+      }
+    },
+    "Notifications": {
+      "NoSelection": "Wähle zuerst mindestens einen Token aus.",
+      "NoPermission": "Du hast keine Berechtigung, die ausgewählten Tokens zu drehen.",
+      "Error": "Token-Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole."
+    }
+  }
+}
