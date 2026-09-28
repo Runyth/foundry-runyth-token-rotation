@@ -17,14 +17,16 @@ function flattenKeys(value, prefix = "") {
   });
 }
 
-test("manifest declares the v1.1.0 Foundry v13 module contract", async () => {
+test("manifest declares the v1.2.0 Foundry v13 module contract", async () => {
   const manifest = await readJson("../module.json");
 
   assert.equal(manifest.id, "runyth-token-rotation");
-  assert.equal(manifest.version, "1.1.0");
+  assert.equal(manifest.version, "1.2.0");
   assert.equal(manifest.compatibility.minimum, "13");
   assert.equal(manifest.compatibility.verified, "13.351");
   assert.deepEqual(manifest.esmodules, ["scripts/main.js"]);
+  assert.equal(manifest.socket, true);
+  assert.deepEqual(manifest.styles, ["styles/interactive-tile.css"]);
 });
 
 test("English and German localization expose identical leaf keys", async () => {

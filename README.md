@@ -1,18 +1,25 @@
 # Runyth Token & Tile Rotation
 
-A small, system-agnostic Foundry VTT v13 module for repeatable, configurable rotation of selected Tokens and Tiles.
+A small, system-agnostic Foundry VTT v13 module for repeatable, configurable rotation of Tokens and Tiles, including opt-in player-clickable Tiles.
 
 ## Features
 
-- Rotate selected Tokens clockwise or counter-clockwise by a configurable step.
-- Rotate selected Tiles with the same controls and the same configured step.
+- Rotate selected Tokens clockwise or counter-clockwise by a configurable user step.
+- Rotate selected Tiles with the same Scene Controls and keybindings.
 - Reset selected Tokens or Tiles to 0°.
 - Multi-selection support with one batched embedded-document update.
 - Serialized operations so rapid repeated presses do not lose increments.
 - Native Token and Tile Scene Control buttons.
 - Configurable Foundry keybindings that target whichever supported layer is active.
-- Per-user rotation-step setting, defaulting to 15°.
-- Permission checks before document updates.
+- Per-user toolbar/keybinding rotation step, defaulting to 15°.
+- Per-Tile **Player Click Rotation** configuration:
+  - opt-in enable/disable toggle;
+  - arbitrary 0.1°-360° amount per click;
+  - clockwise or counter-clockwise direction;
+  - standard unmodified player left-click interaction;
+  - active-GM-authoritative Tile update over the module socket.
+- Hidden Tiles cannot be triggered by players.
+- Tile locking does not disable an explicitly enabled player-click interaction.
 - English and German localization.
 - No game-system dependency.
 
@@ -21,7 +28,7 @@ A small, system-agnostic Foundry VTT v13 module for repeatable, configurable rot
 - Minimum Foundry VTT: v13
 - Verified Foundry VTT: v13.351
 
-## Usage
+## Toolbar/keybinding usage
 
 1. Enable **Runyth Token & Tile Rotation** in the World.
 2. Activate either **Token Controls** or **Tile Controls**.
@@ -29,7 +36,25 @@ A small, system-agnostic Foundry VTT v13 module for repeatable, configurable rot
 4. Press the module's rotate-left, reset, or rotate-right button.
 5. Repeated presses continue from the documents' actual current rotation.
 
-The configured rotation step is shared by Tokens and Tiles. Existing v1.0.0 user settings are retained because the module ID and `rotationStep` setting ID are unchanged.
+The user-scoped toolbar/keybinding rotation step is shared by Tokens and Tiles. Existing v1.0.0/v1.1.0 user settings are retained because the module ID and `rotationStep` setting ID are unchanged.
+
+## Player-clickable Tile usage
+
+As GM:
+
+1. Open the normal configuration sheet for a placed Tile.
+2. In **Player Click Rotation**, enable player left-click rotation.
+3. Choose the degree amount for each click.
+4. Choose clockwise or counter-clockwise.
+5. Save the Tile.
+
+As a player:
+
+1. Hover the enabled Tile; the pointer cursor indicates that it is interactive.
+2. Standard left-click the Tile.
+3. Each click rotates the Tile by its own configured amount and direction.
+
+A connected active GM is required because Foundry ordinarily does not give players generic Tile-edit permission. The player sends only the Scene/Tile identity; the active GM re-reads the authoritative Tile flags and performs the update.
 
 ## Keybindings
 
@@ -43,4 +68,4 @@ They operate on the active Token or Tile layer. No default keys are assigned to 
 
 ## Design notes
 
-The module deliberately treats each Token or Tile document's `rotation` field as the source of truth. It does not maintain a separate click counter or shadow state.
+The module treats each Token or Tile document's `rotation` field as the source of truth. It does not maintain a separate click counter or shadow rotation state.

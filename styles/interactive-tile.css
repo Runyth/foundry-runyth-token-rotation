@@ -1,0 +1,7 @@
+.runyth-interactive-tile-config {
+  margin-block: 0.75rem;
+}
+
+.runyth-interactive-tile-config > legend {
+  font-weight: 600;
+}

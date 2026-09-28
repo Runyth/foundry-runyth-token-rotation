@@ -1,8 +1,8 @@
 {
   "id": "runyth-token-rotation",
   "title": "Runyth Token & Tile Rotation",
-  "description": "Fast, configurable rotation controls for selected Tokens and Tiles.",
-  "version": "1.1.0",
+  "description": "Fast, configurable rotation controls for Tokens and Tiles, including opt-in player-clickable Tile rotation.",
+  "version": "1.2.0",
   "authors": [
     {
       "name": "Akito"
@@ -26,5 +26,9 @@
       "name": "Deutsch",
       "path": "lang/de.json"
     }
+  ],
+  "socket": true,
+  "styles": [
+    "styles/interactive-tile.css"
   ]
 }

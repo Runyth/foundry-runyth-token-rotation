@@ -44,6 +44,27 @@
       "Skipped": "{count} ausgewählte Objekt(e) wurden mangels Berechtigung übersprungen.",
       "UnsupportedLayer": "Aktiviere die Token- oder Tile-Ebene, bevor du dieses Tastenkürzel verwendest.",
       "Error": "Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole."
+    },
+    "InteractiveTile": {
+      "Config": {
+        "Legend": "Spieler-Klickdrehung",
+        "Enabled": {
+          "Name": "Drehung per Spieler-Linksklick aktivieren",
+          "Hint": "Wenn aktiviert, fordert ein normaler Linksklick eines Spielers auf diese Kachel genau einen konfigurierten Drehschritt an. Spieler erhalten dadurch keine allgemeinen Bearbeitungsrechte für Kacheln."
+        },
+        "Degrees": {
+          "Name": "Grad pro Klick",
+          "Hint": "Drehung pro Spieler-Klick. Dezimalwerte von 0,1° bis 360° sind zulässig."
+        },
+        "Direction": {
+          "Name": "Richtung",
+          "Clockwise": "Im Uhrzeigersinn",
+          "CounterClockwise": "Gegen den Uhrzeigersinn"
+        }
+      },
+      "Notifications": {
+        "NoActiveGM": "Für die Spieler-Klickdrehung dieser Kachel muss ein aktiver Spielleiter verbunden sein."
+      }
     }
   }
 }

@@ -44,6 +44,27 @@
       "Skipped": "{count} selected object(s) were skipped because you cannot modify them.",
       "UnsupportedLayer": "Activate the Token or Tile layer before using this rotation keybinding.",
       "Error": "Rotation failed. See the browser console for details."
+    },
+    "InteractiveTile": {
+      "Config": {
+        "Legend": "Player Click Rotation",
+        "Enabled": {
+          "Name": "Enable player left-click rotation",
+          "Hint": "When enabled, a standard player left-click on this Tile requests one configured rotation step. Players are not granted general Tile edit permission."
+        },
+        "Degrees": {
+          "Name": "Degrees per click",
+          "Hint": "Rotation applied for each player click. Accepts decimal values from 0.1° through 360°."
+        },
+        "Direction": {
+          "Name": "Direction",
+          "Clockwise": "Clockwise",
+          "CounterClockwise": "Counter-clockwise"
+        }
+      },
+      "Notifications": {
+        "NoActiveGM": "This Tile requires an active GM to process player click rotation."
+      }
     }
   }
 }

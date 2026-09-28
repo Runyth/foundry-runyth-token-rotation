@@ -100,3 +100,18 @@ test("Scene Controls receive matching Token and Tile rotation actions", () => {
   assert.equal(controls.tokens.tools["runyth-rotate-clockwise"].button, true);
   assert.equal(controls.tiles.tools["runyth-rotate-clockwise"].button, true);
 });
+
+test("interactive Tile hooks are registered without changing existing control IDs", () => {
+  for (const hookName of [
+    "ready",
+    "renderTileConfig",
+    "canvasReady",
+    "canvasTearDown",
+    "drawTile",
+    "refreshTile",
+    "destroyTile",
+    "updateTile"
+  ]) {
+    assert.equal(typeof hookCallbacks.get(hookName), "function", `${hookName} should be registered`);
+  }
+});

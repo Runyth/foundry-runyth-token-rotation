@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.2.0 - 2026-09-28
+
+### Feat
+
+- Add opt-in **Player Click Rotation** to each placed standard Tile.
+- Add per-Tile degree amount from 0.1° through 360°, including decimal values.
+- Add per-Tile clockwise/counter-clockwise direction.
+- Add a pointer cursor for player-clickable Tiles.
+- Add GM-authoritative socket handling so players can trigger enabled Tiles without receiving generic Tile edit permission.
+- Keep explicitly interactive locked Tiles usable while rejecting hidden Tiles.
+- Add English and German Tile configuration UI and notifications.
+
+### Struct
+
+- Add `interactive-tile-core.js` for deterministic configuration, direction, degree, and click validation logic.
+- Add `interactive-tile.js` for TileConfig integration, PIXI interaction binding, socket validation, and serialized GM updates.
+- Enable the package-specific Foundry socket namespace in `module.json`.
+
+### Test
+
+- Add pure tests for degree bounds, decimal amounts, direction handling, default flags, and standard-left-click detection.
+- Add GM-side request tests proving request-supplied angle/direction values are ignored in favor of authoritative Tile flags.
+- Add rejection coverage for disabled and hidden Tiles.
+- Add integration-contract coverage for all new Foundry hooks.
+
 ## 1.1.0 - 2026-09-28
 
 ### Feat

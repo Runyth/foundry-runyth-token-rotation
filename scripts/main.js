@@ -15,6 +15,13 @@ import {
   buildRotationUpdates,
   sanitizeRotationStep
 } from "./rotation-core.js";
+import {
+  clearInteractiveTileBindings,
+  configureInteractiveTile,
+  injectInteractiveTileConfig,
+  refreshInteractiveTileBindings,
+  registerInteractiveTileSocket
+} from "./interactive-tile.js";
 
 const MODULE_ID = "runyth-token-rotation";
 const SETTING_ROTATION_STEP = "rotationStep";
@@ -462,4 +469,38 @@ Hooks.once("init", () => {
 Hooks.on("getSceneControlButtons", (controls) => {
   addRotationTools(controls.tokens, "token");
   addRotationTools(controls.tiles, "tile");
+});
+
+Hooks.once("ready", () => {
+  registerInteractiveTileSocket(MODULE_ID);
+});
+
+Hooks.on("renderTileConfig", (app, element) => {
+  injectInteractiveTileConfig(app, element, MODULE_ID);
+});
+
+Hooks.on("canvasReady", () => {
+  refreshInteractiveTileBindings(MODULE_ID);
+});
+
+Hooks.on("canvasTearDown", () => {
+  clearInteractiveTileBindings();
+});
+
+Hooks.on("drawTile", (tile) => {
+  configureInteractiveTile(tile, MODULE_ID);
+});
+
+Hooks.on("refreshTile", (tile) => {
+  configureInteractiveTile(tile, MODULE_ID);
+});
+
+Hooks.on("destroyTile", (tile) => {
+  if (tile?.document?.id) {
+    queueMicrotask(() => refreshInteractiveTileBindings(MODULE_ID));
+  }
+});
+
+Hooks.on("updateTile", () => {
+  queueMicrotask(() => refreshInteractiveTileBindings(MODULE_ID));
 });
