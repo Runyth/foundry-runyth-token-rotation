@@ -1,8 +1,8 @@
 {
   "id": "runyth-token-rotation",
-  "title": "Runyth Token Rotation",
-  "description": "Fast, configurable rotation controls for selected tokens.",
-  "version": "1.0.0",
+  "title": "Runyth Token & Tile Rotation",
+  "description": "Fast, configurable rotation controls for selected Tokens and Tiles.",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Akito"

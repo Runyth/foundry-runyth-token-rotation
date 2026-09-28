@@ -1,20 +1,49 @@
 {
   "RUNYTH_TOKEN_ROTATION": {
     "Controls": {
-      "CounterClockwise": "Ausgewählte Tokens gegen den Uhrzeigersinn drehen",
-      "Reset": "Drehung ausgewählter Tokens zurücksetzen",
-      "Clockwise": "Ausgewählte Tokens im Uhrzeigersinn drehen"
+      "Token": {
+        "CounterClockwise": "Ausgewählte Tokens gegen den Uhrzeigersinn drehen",
+        "Reset": "Drehung ausgewählter Tokens zurücksetzen",
+        "Clockwise": "Ausgewählte Tokens im Uhrzeigersinn drehen"
+      },
+      "Tile": {
+        "CounterClockwise": "Ausgewählte Tiles gegen den Uhrzeigersinn drehen",
+        "Reset": "Drehung ausgewählter Tiles zurücksetzen",
+        "Clockwise": "Ausgewählte Tiles im Uhrzeigersinn drehen"
+      }
     },
     "Settings": {
       "RotationStep": {
         "Name": "Drehschritt",
-        "Hint": "Gradzahl, um die ausgewählte Tokens pro Aktion gedreht werden. Standard: 15°."
+        "Hint": "Gradzahl, um die ausgewählte Tokens oder Tiles pro Aktion gedreht werden. Standard: 15°."
+      }
+    },
+    "Keybindings": {
+      "CounterClockwise": {
+        "Name": "Ausgewählte Objekte gegen den Uhrzeigersinn drehen",
+        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt gegen den Uhrzeigersinn."
+      },
+      "Clockwise": {
+        "Name": "Ausgewählte Objekte im Uhrzeigersinn drehen",
+        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt im Uhrzeigersinn."
+      },
+      "Reset": {
+        "Name": "Drehung ausgewählter Objekte zurücksetzen",
+        "Hint": "Setzt ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene auf 0° zurück."
       }
     },
     "Notifications": {
-      "NoSelection": "Wähle zuerst mindestens einen Token aus.",
-      "NoPermission": "Du hast keine Berechtigung, die ausgewählten Tokens zu drehen.",
-      "Error": "Token-Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole."
+      "NoSelection": {
+        "Token": "Wähle zuerst mindestens einen Token aus.",
+        "Tile": "Wähle zuerst mindestens ein Tile aus."
+      },
+      "NoPermission": {
+        "Token": "Du hast keine Berechtigung, die ausgewählten Tokens zu drehen.",
+        "Tile": "Du hast keine Berechtigung, die ausgewählten Tiles zu drehen."
+      },
+      "Skipped": "{count} ausgewählte Objekt(e) wurden mangels Berechtigung übersprungen.",
+      "UnsupportedLayer": "Aktiviere die Token- oder Tile-Ebene, bevor du dieses Tastenkürzel verwendest.",
+      "Error": "Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole."
     }
   }
 }

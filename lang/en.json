@@ -1,20 +1,49 @@
 {
   "RUNYTH_TOKEN_ROTATION": {
     "Controls": {
-      "CounterClockwise": "Rotate Selected Tokens Counter-Clockwise",
-      "Reset": "Reset Selected Token Rotation",
-      "Clockwise": "Rotate Selected Tokens Clockwise"
+      "Token": {
+        "CounterClockwise": "Rotate Selected Tokens Counter-Clockwise",
+        "Reset": "Reset Selected Token Rotation",
+        "Clockwise": "Rotate Selected Tokens Clockwise"
+      },
+      "Tile": {
+        "CounterClockwise": "Rotate Selected Tiles Counter-Clockwise",
+        "Reset": "Reset Selected Tile Rotation",
+        "Clockwise": "Rotate Selected Tiles Clockwise"
+      }
     },
     "Settings": {
       "RotationStep": {
         "Name": "Rotation Step",
-        "Hint": "Degrees by which selected tokens are rotated per command. Default: 15°."
+        "Hint": "Degrees by which selected Tokens or Tiles are rotated per command. Default: 15°."
+      }
+    },
+    "Keybindings": {
+      "CounterClockwise": {
+        "Name": "Rotate Selected Objects Counter-Clockwise",
+        "Hint": "Rotate selected objects on the active Token or Tile layer counter-clockwise by the configured step."
+      },
+      "Clockwise": {
+        "Name": "Rotate Selected Objects Clockwise",
+        "Hint": "Rotate selected objects on the active Token or Tile layer clockwise by the configured step."
+      },
+      "Reset": {
+        "Name": "Reset Selected Object Rotation",
+        "Hint": "Reset selected objects on the active Token or Tile layer to 0°."
       }
     },
     "Notifications": {
-      "NoSelection": "Select at least one token first.",
-      "NoPermission": "You do not have permission to rotate the selected token(s).",
-      "Error": "Token rotation failed. See the browser console for details."
+      "NoSelection": {
+        "Token": "Select at least one Token first.",
+        "Tile": "Select at least one Tile first."
+      },
+      "NoPermission": {
+        "Token": "You do not have permission to rotate the selected Token(s).",
+        "Tile": "You do not have permission to rotate the selected Tile(s)."
+      },
+      "Skipped": "{count} selected object(s) were skipped because you cannot modify them.",
+      "UnsupportedLayer": "Activate the Token or Tile layer before using this rotation keybinding.",
+      "Error": "Rotation failed. See the browser console for details."
     }
   }
 }
