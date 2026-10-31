@@ -4,7 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check scripts/main.js && node --check scripts/rotation-core.js && node --check scripts/interactive-tile-core.js && node --check scripts/interactive-tile.js",
-    "test": "node --test tests/*.test.mjs"
-  }
+    "test": "node --test tests/*.test.mjs",
+    "package": "python3 tools/package.py",
+    "check": "node --check scripts/main.js && node --check scripts/rotation-core.js && node --check scripts/interactive-tile-core.js && node --check scripts/interactive-tile.js && npm test && npm run package"
+  },
+  "engines": {
+    "node": ">=22.13.0 <27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Runyth/foundry-runyth-token-rotation.git"
+  },
+  "license": "AGPL-3.0-or-later"
 }

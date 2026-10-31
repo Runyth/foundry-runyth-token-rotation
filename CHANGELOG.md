@@ -2,6 +2,11 @@
 
 ## 1.2.0 - 2026-09-28
 
+### Published
+
+- Licensed the program under AGPL-3.0-or-later.
+- Published install, source, and documentation archives as `-mod`, `-src`, and `-doc`.
+
 ### Feat
 
 - Add opt-in **Player Click Rotation** to each placed standard Tile.

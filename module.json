@@ -5,7 +5,8 @@
   "version": "1.2.0",
   "authors": [
     {
-      "name": "Akito"
+      "name": "Runyth",
+      "url": "https://github.com/Runyth"
     }
   ],
   "compatibility": {
@@ -30,5 +31,11 @@
   "socket": true,
   "styles": [
     "styles/interactive-tile.css"
-  ]
+  ],
+  "license": "LICENSE",
+  "readme": "README.md",
+  "url": "https://github.com/Runyth/foundry-runyth-token-rotation",
+  "manifest": "https://github.com/Runyth/foundry-runyth-token-rotation/releases/latest/download/module.json",
+  "download": "https://github.com/Runyth/foundry-runyth-token-rotation/releases/download/v1.2.0/runyth-token-rotation-v1.2.0-mod.zip",
+  "changelog": "CHANGELOG.md"
 }
