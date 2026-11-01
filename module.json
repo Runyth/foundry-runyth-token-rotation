@@ -2,7 +2,7 @@
   "id": "runyth-token-rotation",
   "title": "Runyth Token & Tile Rotation",
   "description": "Fast, configurable rotation controls for Tokens and Tiles, including opt-in player-clickable Tile rotation.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "authors": [
     {
       "name": "Runyth",
@@ -36,6 +36,6 @@
   "readme": "README.md",
   "url": "https://github.com/Runyth/foundry-runyth-token-rotation",
   "manifest": "https://github.com/Runyth/foundry-runyth-token-rotation/releases/latest/download/module.json",
-  "download": "https://github.com/Runyth/foundry-runyth-token-rotation/releases/download/v1.2.0/runyth-token-rotation-v1.2.0-mod.zip",
+  "download": "https://github.com/Runyth/foundry-runyth-token-rotation/releases/download/v1.2.1/runyth-token-rotation-v1.2.1-mod.zip",
   "changelog": "CHANGELOG.md"
 }
