@@ -1,69 +1,69 @@
 {
   "RUNYTH_TOKEN_ROTATION": {
     "Controls": {
-      "Token": {
-        "CounterClockwise": "Rotate Selected Tokens Counter-Clockwise",
-        "Reset": "Reset Selected Token Rotation",
-        "Clockwise": "Rotate Selected Tokens Clockwise"
-      },
       "Tile": {
+        "Clockwise": "Rotate Selected Tiles Clockwise",
         "CounterClockwise": "Rotate Selected Tiles Counter-Clockwise",
-        "Reset": "Reset Selected Tile Rotation",
-        "Clockwise": "Rotate Selected Tiles Clockwise"
+        "Reset": "Reset Selected Tile Rotation"
+      },
+      "Token": {
+        "Clockwise": "Rotate Selected Tokens Clockwise",
+        "CounterClockwise": "Rotate Selected Tokens Counter-Clockwise",
+        "Reset": "Reset Selected Token Rotation"
       }
-    },
-    "Settings": {
-      "RotationStep": {
-        "Name": "Rotation Step",
-        "Hint": "Degrees by which selected Tokens or Tiles are rotated per command. Default: 15°."
-      }
-    },
-    "Keybindings": {
-      "CounterClockwise": {
-        "Name": "Rotate Selected Objects Counter-Clockwise",
-        "Hint": "Rotate selected objects on the active Token or Tile layer counter-clockwise by the configured step."
-      },
-      "Clockwise": {
-        "Name": "Rotate Selected Objects Clockwise",
-        "Hint": "Rotate selected objects on the active Token or Tile layer clockwise by the configured step."
-      },
-      "Reset": {
-        "Name": "Reset Selected Object Rotation",
-        "Hint": "Reset selected objects on the active Token or Tile layer to 0°."
-      }
-    },
-    "Notifications": {
-      "NoSelection": {
-        "Token": "Select at least one Token first.",
-        "Tile": "Select at least one Tile first."
-      },
-      "NoPermission": {
-        "Token": "You do not have permission to rotate the selected Token(s).",
-        "Tile": "You do not have permission to rotate the selected Tile(s)."
-      },
-      "Skipped": "{count} selected object(s) were skipped because you cannot modify them.",
-      "UnsupportedLayer": "Activate the Token or Tile layer before using this rotation keybinding.",
-      "Error": "Rotation failed. See the browser console for details."
     },
     "InteractiveTile": {
       "Config": {
-        "Legend": "Player Click Rotation",
-        "Enabled": {
-          "Name": "Enable player left-click rotation",
-          "Hint": "When enabled, a standard player left-click on this Tile requests one configured rotation step. Players are not granted general Tile edit permission."
-        },
         "Degrees": {
-          "Name": "Degrees per click",
-          "Hint": "Rotation applied for each player click. Accepts decimal values from 0.1° through 360°."
+          "Hint": "Rotation applied for each player click. Accepts decimal values from 0.1° through 360°.",
+          "Name": "Degrees per click"
         },
         "Direction": {
-          "Name": "Direction",
           "Clockwise": "Clockwise",
-          "CounterClockwise": "Counter-clockwise"
-        }
+          "CounterClockwise": "Counter-clockwise",
+          "Name": "Direction"
+        },
+        "Enabled": {
+          "Hint": "When enabled, a standard player left-click on this Tile requests one configured rotation step. Players are not granted general Tile edit permission.",
+          "Name": "Enable player left-click rotation"
+        },
+        "Legend": "Player Click Rotation"
       },
       "Notifications": {
         "NoActiveGM": "This Tile requires an active GM to process player click rotation."
+      }
+    },
+    "Keybindings": {
+      "Clockwise": {
+        "Hint": "Rotate selected objects on the active Token or Tile layer clockwise by the configured step.",
+        "Name": "Rotate Selected Objects Clockwise"
+      },
+      "CounterClockwise": {
+        "Hint": "Rotate selected objects on the active Token or Tile layer counter-clockwise by the configured step.",
+        "Name": "Rotate Selected Objects Counter-Clockwise"
+      },
+      "Reset": {
+        "Hint": "Reset selected objects on the active Token or Tile layer to 0°.",
+        "Name": "Reset Selected Object Rotation"
+      }
+    },
+    "Notifications": {
+      "Error": "Rotation failed. See the browser console for details.",
+      "NoPermission": {
+        "Tile": "You do not have permission to rotate the selected Tile(s).",
+        "Token": "You do not have permission to rotate the selected Token(s)."
+      },
+      "NoSelection": {
+        "Tile": "Select at least one Tile first.",
+        "Token": "Select at least one Token first."
+      },
+      "Skipped": "{count} selected object(s) were skipped because you cannot modify them.",
+      "UnsupportedLayer": "Activate the Token or Tile layer before using this rotation keybinding."
+    },
+    "Settings": {
+      "RotationStep": {
+        "Hint": "Degrees by which selected Tokens or Tiles are rotated per command. Default: 15°.",
+        "Name": "Rotation Step"
       }
     }
   }

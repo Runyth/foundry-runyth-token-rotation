@@ -1,69 +1,69 @@
 {
   "RUNYTH_TOKEN_ROTATION": {
     "Controls": {
-      "Token": {
-        "CounterClockwise": "Ausgewählte Tokens gegen den Uhrzeigersinn drehen",
-        "Reset": "Drehung ausgewählter Tokens zurücksetzen",
-        "Clockwise": "Ausgewählte Tokens im Uhrzeigersinn drehen"
-      },
       "Tile": {
+        "Clockwise": "Ausgewählte Tiles im Uhrzeigersinn drehen",
         "CounterClockwise": "Ausgewählte Tiles gegen den Uhrzeigersinn drehen",
-        "Reset": "Drehung ausgewählter Tiles zurücksetzen",
-        "Clockwise": "Ausgewählte Tiles im Uhrzeigersinn drehen"
+        "Reset": "Drehung ausgewählter Tiles zurücksetzen"
+      },
+      "Token": {
+        "Clockwise": "Ausgewählte Tokens im Uhrzeigersinn drehen",
+        "CounterClockwise": "Ausgewählte Tokens gegen den Uhrzeigersinn drehen",
+        "Reset": "Drehung ausgewählter Tokens zurücksetzen"
       }
-    },
-    "Settings": {
-      "RotationStep": {
-        "Name": "Drehschritt",
-        "Hint": "Gradzahl, um die ausgewählte Tokens oder Tiles pro Aktion gedreht werden. Standard: 15°."
-      }
-    },
-    "Keybindings": {
-      "CounterClockwise": {
-        "Name": "Ausgewählte Objekte gegen den Uhrzeigersinn drehen",
-        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt gegen den Uhrzeigersinn."
-      },
-      "Clockwise": {
-        "Name": "Ausgewählte Objekte im Uhrzeigersinn drehen",
-        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt im Uhrzeigersinn."
-      },
-      "Reset": {
-        "Name": "Drehung ausgewählter Objekte zurücksetzen",
-        "Hint": "Setzt ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene auf 0° zurück."
-      }
-    },
-    "Notifications": {
-      "NoSelection": {
-        "Token": "Wähle zuerst mindestens einen Token aus.",
-        "Tile": "Wähle zuerst mindestens ein Tile aus."
-      },
-      "NoPermission": {
-        "Token": "Du hast keine Berechtigung, die ausgewählten Tokens zu drehen.",
-        "Tile": "Du hast keine Berechtigung, die ausgewählten Tiles zu drehen."
-      },
-      "Skipped": "{count} ausgewählte Objekt(e) wurden mangels Berechtigung übersprungen.",
-      "UnsupportedLayer": "Aktiviere die Token- oder Tile-Ebene, bevor du dieses Tastenkürzel verwendest.",
-      "Error": "Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole."
     },
     "InteractiveTile": {
       "Config": {
-        "Legend": "Spieler-Klickdrehung",
-        "Enabled": {
-          "Name": "Drehung per Spieler-Linksklick aktivieren",
-          "Hint": "Wenn aktiviert, fordert ein normaler Linksklick eines Spielers auf diese Kachel genau einen konfigurierten Drehschritt an. Spieler erhalten dadurch keine allgemeinen Bearbeitungsrechte für Kacheln."
-        },
         "Degrees": {
-          "Name": "Grad pro Klick",
-          "Hint": "Drehung pro Spieler-Klick. Dezimalwerte von 0,1° bis 360° sind zulässig."
+          "Hint": "Drehung pro Spieler-Klick. Dezimalwerte von 0,1° bis 360° sind zulässig.",
+          "Name": "Grad pro Klick"
         },
         "Direction": {
-          "Name": "Richtung",
           "Clockwise": "Im Uhrzeigersinn",
-          "CounterClockwise": "Gegen den Uhrzeigersinn"
-        }
+          "CounterClockwise": "Gegen den Uhrzeigersinn",
+          "Name": "Richtung"
+        },
+        "Enabled": {
+          "Hint": "Wenn aktiviert, fordert ein normaler Linksklick eines Spielers auf diese Kachel genau einen konfigurierten Drehschritt an. Spieler erhalten dadurch keine allgemeinen Bearbeitungsrechte für Kacheln.",
+          "Name": "Drehung per Spieler-Linksklick aktivieren"
+        },
+        "Legend": "Spieler-Klickdrehung"
       },
       "Notifications": {
         "NoActiveGM": "Für die Spieler-Klickdrehung dieser Kachel muss ein aktiver Spielleiter verbunden sein."
+      }
+    },
+    "Keybindings": {
+      "Clockwise": {
+        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt im Uhrzeigersinn.",
+        "Name": "Ausgewählte Objekte im Uhrzeigersinn drehen"
+      },
+      "CounterClockwise": {
+        "Hint": "Dreht ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene um den konfigurierten Drehschritt gegen den Uhrzeigersinn.",
+        "Name": "Ausgewählte Objekte gegen den Uhrzeigersinn drehen"
+      },
+      "Reset": {
+        "Hint": "Setzt ausgewählte Objekte auf der aktiven Token- oder Tile-Ebene auf 0° zurück.",
+        "Name": "Drehung ausgewählter Objekte zurücksetzen"
+      }
+    },
+    "Notifications": {
+      "Error": "Drehung fehlgeschlagen. Details befinden sich in der Browser-Konsole.",
+      "NoPermission": {
+        "Tile": "Du hast keine Berechtigung, die ausgewählten Tiles zu drehen.",
+        "Token": "Du hast keine Berechtigung, die ausgewählten Tokens zu drehen."
+      },
+      "NoSelection": {
+        "Tile": "Wähle zuerst mindestens ein Tile aus.",
+        "Token": "Wähle zuerst mindestens einen Token aus."
+      },
+      "Skipped": "{count} ausgewählte Objekt(e) wurden mangels Berechtigung übersprungen.",
+      "UnsupportedLayer": "Aktiviere die Token- oder Tile-Ebene, bevor du dieses Tastenkürzel verwendest."
+    },
+    "Settings": {
+      "RotationStep": {
+        "Hint": "Gradzahl, um die ausgewählte Tokens oder Tiles pro Aktion gedreht werden. Standard: 15°.",
+        "Name": "Drehschritt"
       }
     }
   }
